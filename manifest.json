@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "JSS Download as CSV",
+  "version": "0.0.1",
+  "description": "Download Transactions and Payments from the J. Safra Sarasin (LU) eBanking app as CSV.",
+  "homepage_url": "https://github.com/DouweM/jss-download-as-csv",
+  "author": {
+    "name": "Douwe Maan",
+    "email": "hi@douwe.me"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.jsafrasarasin.com/ebanking/*"],
+      "js": ["jquery-3.6.4.min.js", "content.js"]
+    }
+  ]
+}
